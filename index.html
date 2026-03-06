@@ -1,1 +1,44 @@
-<!-- aa -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>移調ツール</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-grid"></div>
+  <div class="bg-glow"></div>
+
+  <div class="container">
+
+    <header>
+      <p class="subtitle">♩ &nbsp; Chord Transposer &nbsp; ♩</p>
+      <h1>移調ツール</h1>
+    </header>
+
+    <section class="input-section">
+      <label for="chord-input">コードを入力</label>
+      <textarea id="chord-input" rows="5" placeholder="Am  F  C  G&#10;Dm7  E7  Am"></textarea>
+    </section>
+
+    <section class="controls">
+      <button id="btn-down">− 1</button>
+      <div class="semitone-display">
+        <div id="semitone-label">Original</div>
+        <button id="btn-reset" class="hidden">reset</button>
+      </div>
+      <button id="btn-up">+ 1</button>
+    </section>
+
+    <section id="output" class="output"></section>
+
+    <p class="footnote">スラッシュコード (G/B) ・ シャープ / フラット ・ 7th / sus / dim / aug 対応</p>
+
+  </div>
+
+  <script src="music.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
