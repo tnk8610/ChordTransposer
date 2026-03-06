@@ -2,6 +2,7 @@
 
 const EXAMPLE = `Gm Am7(-5) D7 D#
 Ddim Cm F7 A#M7
+
 Fsus4 G6 Cadd9 Am7
 Bdim E Am`;
 
